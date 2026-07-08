@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="active">
+        <h1>Welcome to Interactive Quiz Master!</h1>
+        <p>Test your knowledge and have fun. Click below to begin.</p>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+    <div id="quiz-screen">
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+        </div>
+        <button id="next-btn" style="display:none;">Next</button>
+    </div>
+    <div id="result-screen">
+        <h2>Your Results</h2>
+        <p id="score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

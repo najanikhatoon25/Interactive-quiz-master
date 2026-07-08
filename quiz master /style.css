@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+#start-screen, #quiz-screen, #result-screen {
+    display: none;
+    background: #fff;
+    padding: 2rem 2.5rem;
+    margin-top: 4rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+#start-screen.active, #quiz-screen.active, #result-screen.active {
+    display: block;
+}
+button {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #2563eb;
+}
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.option-btn {
+    background: #e0e7ff;
+    color: #222;
+    border: 1px solid #b6c4e6;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.option-btn.selected {
+    background: #4f8cff;
+    color: #fff;
+}
+.option-btn.correct {
+    background: #22c55e;
+    color: #fff;
+}
+.option-btn.incorrect {
+    background: #ef4444;
+    color: #fff;
+}
